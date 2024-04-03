@@ -1,0 +1,115 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0b2b; /* Dark blue background color */
+    color: #fff; /* Light text color */
+    line-height: 1.6;
+}
+/* Header styles */
+.header {
+    background-color: #030325; /* Dark blue header background */
+    color: #fff; /* Light text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.header__title {
+    font-size: 3rem;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+}
+
+.header__nav-list {
+    list-style-type: none;
+    display: flex; /* Align items horizontally */
+}
+
+.header__nav-item {
+    margin-right: 20px;
+}
+
+.header__nav-link {
+    color: #fff; /* White link color */
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Main styles */
+.main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 20px;
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.section__content {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.section__title {
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+/* Footer styles */
+.footer {
+    background: linear-gradient(to right, #0a0a34, #0e0e3d); /* Dark blue gradient footer background */
+    color: #fff; /* Light text color */
+    padding: 20px;
+    text-align: center;
+}
+/* Character images styles */
+.characters {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.character {
+    width: 200px; /* Increase character image size */
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+/* Location images styles */
+.location-image {
+    max-width: 500px; /* Decrease location image size */
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .header__nav-list {
+        flex-direction: column;
+    }
+
+    .header__nav-item {
+        margin-bottom: 10px;
+    }
+}
